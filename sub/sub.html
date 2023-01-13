@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/jquery.scrollTo.min.js"></script>
+  <script src="./js/main.js" defer></script>
+
+  <link rel="stylesheet" href="./css/sub_main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="outer_header"> 
+    <div class="inner_header">
+      <header class="header" id="header">
+        <input type="checkbox" id="m_lnb">
+        <input type="checkbox" id="m_search">
+        <div class="gnb">
+          
+          <div class="logo_box">
+            <a href="../index.html">
+              <img src="./images/logo.png" alt="상단 로고 이미지">
+            </a>
+          </div>
+          <ul class="m_gnb_icon">
+            <li class="user_icon"><a href="#!"><i class="fa-regular fa-user"></i></a></li>
+            <li class="heart_icon"><a href="#!"><i class="fa-regular fa-heart"></i></a></li>
+            <li class="btn_box">
+              <label for="m_search" class="btn_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </label>
+            </li>
+            <label for="m_lnb" class="lab_m_lnb_open"><li><i class="fa-solid fa-bars"></i></li></label>
+            <label for="m_lnb" class="lab_m_lnb_close"><li><i class="fa-solid fa-x"></i></li>
+            </label>
+          </ul>
+          <div class="m_search_box">
+            <div class="blank">
+              <input type="text" class="input" placeholder="검색어를 입력해주세요." maxlength="20" >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <ul class="w_gnb">
+            <li class="btn_w_login"><a href="#!">로그인</a></li>
+            <li class="btn_w_join"><a href="../join/join.html" target="_blank">회원가입</a></li>
+            <li><a href="#!">고객센터</a></li>
+            <li><a href="#!">English</a></li>
+            <li>
+              <div class="search_box">
+                <input type="text" class="search">
+                <div class="icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div><!--gnb-->
+
+        <nav class="lnb_box">
+          <div class="m_lnb_sheet">
+            <ul class="m_gnb">
+              <li class="btn_m_login"><a href="#!">로그인</a></li>
+              <li><a href="#!">알림마당</a></li>
+              <li><a href="#!">고객센터</a></li>
+              <li><a href="#!">English</a></li>
+            </ul>
+
+            <div class="m_schedule">
+              <div class="schedule">
+                <a href="#!">
+                  상영시간표
+                  <i class="fa-solid fa-calendar-days"></i>
+                </a>
+              </div>
+              <div class="sns_icon">
+                <div class="sns_box">
+                  <p class="insta_icon">
+                    <a href="#!"><img src="./images/sns/insta_black.png" alt="인스타그램 아이콘"></a> 
+                  </p>
+                  <p class="facebook_icon">
+                    <a href="#!"><img src="./images/sns/facebook_black.png" alt="페이스북 아이콘"></a>
+                  </p>
+                  <p class="youtube_icon">
+                    <a href="#!"><img src="./images/sns/youtube_black.png" alt="유튜브 아이콘"></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="m_lnb_box">
+
+              <input type="radio" name="rad_lnb" id="rad_lnb01">
+              <input type="radio" name="rad_lnb" id="rad_lnb02">
+              <input type="radio" name="rad_lnb" id="rad_lnb03">
+              <input type="radio" name="rad_lnb" id="rad_lnb04">
+              <input type="radio" name="rad_lnb" id="rad_lnb05">
+              <input type="radio" name="rad_lnb" id="rad_lnb06">
+              <input type="radio" name="rad_lnb" id="rad_lnb07">
+              
+              <label for="rad_lnb01" class="lab_mlnb">
+                <p class="mlnb_title">영화</p>
+                <p class="mlnb_icon"><i class="fa-solid fa-chevron-down"></i></p>
+              </label>
+                <ul class="m_lnb01 m_lnbsheet">
+                  <li><a href="#!">상영시간표</a></li>
+                  <li><a href="#!">현재상영프로그램</a></li>
+                  <li><a href="#!">상영예정프로그램</a></li>
+                  <li><a href="#!">지난프로그램</a></li>
+                  <li><a href="#!">영화 + 비평</a></li>
+                  <li><a href="#!">영화와 소통</a></li>
+                  <li><a href="#!">시네마테크소개</a></li>
+                </ul>
+
+              <label for="rad_lnb02" class="lab_mlnb">
+                <p class="mlnb_title">공연</p>
+                <p class="mlnb_icon"><i class="fa-solid fa-chevron-down"></i></p>
+              </label>
+                <ul class="m_lnb02 m_lnbsheet">
+                  <li><a href="#!">공연가이드</a></li>
+                  <li><a href="#!">공연일정</a></li>
+                  <li><a href="#!">예매안내</a></li>
+                  <li><a href="#!">지난공연</a></li>
+                  <li><a href="#!">객석나눔</a></li>
+                </ul>
+
+              <label for="rad_lnb03" class="lab_mlnb">
+                <p class="mlnb_title">영화ㆍ예술 교육</p>
+                <p class="mlnb_icon"><i class="fa-solid fa-chevron-down"></i></p>
+              </label>
+                <ul class="m_lnb03 m_lnbsheet">
+                  <li><a href="#!">아카데미 일정</a></li>
+                  <li><a href="#!">영화 아카데미</a></li>
+                  <li><a href="#!">예술 아카데미</a></li>
+                  <li><a href="#!">어린이청소년</a></li>
+                  <li><a href="#!">아카데미</a></li>
+                  <li><a href="#!">시설/기자재</a></li>
+                  <li><a href="#!">사용신청</a></li>
+                </ul>
+
+              <label for="rad_lnb04" class="lab_mlnb">
+                <p class="mlnb_title">영화도서관</p>
+                <p class="mlnb_icon"><i class="fa-solid fa-chevron-down"></i></p>
+              </label>
+                <ul class="m_lnb04 m_lnbsheet">
+                  <li><a href="#!">이용안내</a></li>
+                  <li><a href="#!">자료검색</a></li>
+                  <li><a href="#!">공지사항</a></li>
+                  <li><a href="#!">행사안내</a></li>
+                  <li><a href="#!">필름 아카이브</a></li>
+                </ul>
+
+              <label for="rad_lnb05" class="lab_mlnb">
+                <p class="mlnb_title">전시ㆍ행사</p>
+                <p class="mlnb_icon"><i class="fa-solid fa-chevron-down"></i></p>
+              </label>
+                <ul class="m_lnb05 m_lnbsheet">
+                  <li><a href="#!">전시ㆍ행사가이드</a></li>
+                  <li><a href="#!">전시ㆍ행사일정</a></li>
+                  <li><a href="#!">지난전시ㆍ행사</a></li>
+                  <li><a href="#!">행사장배치도</a></li>
+                </ul>
+
+              <label for="rad_lnb06" class="lab_mlnb">
+                <p class="mlnb_title">이벤트 제휴</p>
+                <p class="mlnb_icon"><i class="fa-solid fa-chevron-down"></i></p>
+              </label>
+                <ul class="m_lnb06 m_lnbsheet">
+                  <li><a href="#!">제휴</a></li>
+                  <li><a href="#!">회원제안내</a></li>
+                  <li><a href="#!">메세나 기업 모집</a></li>
+                  <li><a href="#!">광고신청</a></li>
+                  <li><a href="#!">촬영신청</a></li>
+                </ul>
+
+              <label for="rad_lnb07" class="lab_mlnb">
+                <p class="mlnb_title">영화의 전당</p>
+                <p class="mlnb_icon"><i class="fa-solid fa-chevron-down"></i></p>
+              </label>
+                <ul class="m_lnb07 m_lnbsheet">
+                  <li><a href="#!">영화의 전당 소개</a></li>
+                  <li><a href="./sub/sub.html">연혁</a></li>
+                  <li><a href="#!">대관 및 배치도</a></li>
+                  <li><a href="#!">시설소개</a></li>
+                  <li><a href="#!">오시는 길</a></li>
+                  <li><a href="#!">주차안내</a></li>
+                </ul> 
+
+            </div>        
+          </div><!--m_lnb_sheet-->
+        </nav><!--lnb_box-->
+      </header><!--header-->
+    </div><!--inner_header-->
+  </div><!--outter_header-->
+  <div class="login_bg">
+    <div class="login_sheet">
+      <div class="btn_login_close">
+        <div class="icon">
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
+      <p class="login_title">영화의 전당 로그인</p>
+      <div class="id_blank">
+        <input type="text" id="user_id" class="user_id" placeholder="아이디를 입력하세요.">
+      </div>
+      <div class="pw_blank">
+        <input type="password" id="user_pw" class="user_pw" placeholder="비밀번호를 입력하세요.">
+      </div>
+      <div class="ch_box">
+        <label for="auto_login"><input type="checkbox" name="" id="auto_login" class="auto_login">로그인유지</label>
+        <span class="find_info">
+          <a href="#!">아이디/패스워드 찾기</a>
+        </span>
+      </div>
+      <div class="btn_box">
+        <button type="button" class="btn_login">
+          로그인
+        </button>
+        <button type="button" class="btn_join" id="btn_join">
+          <a href="./join/join.html" target="_blank">회원가입</a>
+        </button>
+      </div>
+      
+    </div>
+  </div>
+  <nav>
+    <ul class="lnb">
+      <li class="m1"><a href="#!">영화</a>
+        <ul>
+          <li><a href="#!">상영시간표</a></li>
+          <li><a href="#!">현재상영프로그램</a></li>
+          <li><a href="#!">상영예정프로그램</a></li>
+          <li><a href="#!">지난프로그램</a></li>
+          <li><a href="#!">영화 + 비평</a></li>
+          <li><a href="#!">영화와 소통</a></li>
+          <li><a href="#!">시네마테크소개</a></li>
+        </ul>
+      </li><!--m1-->
+
+      <li class="m2"><a href="#!">공연</a>
+        <ul>
+          <li><a href="#!">공연가이드</a></li>
+          <li><a href="#!">공연일정</a></li>
+          <li><a href="#!">예매안내</a></li>
+          <li><a href="#!">지난공연</a></li>
+          <li><a href="#!">객석나눔</a></li>
+        </ul>
+      </li><!--m2-->
+
+      <li class="m3"><a href="#!">영화ㆍ예술 교육</a>
+        <ul>
+          <li><a href="#!">아카데미 일정</a></li>
+          <li><a href="#!">영화 아카데미</a></li>
+          <li><a href="#!">예술 아카데미</a></li>
+          <li><a href="#!">어린이청소년</a></li>
+          <li><a href="#!">아카데미</a></li>
+          <li><a href="#!">시설/기자재</a></li>
+          <li><a href="#!">사용신청</a></li>
+        </ul>
+      </li><!--m3-->
+
+      <li class="m4"><a href="#!">영화도서관</a>
+        <ul>
+          <li><a href="#!">이용안내</a></li>
+          <li><a href="#!">자료검색</a></li>
+          <li><a href="#!">공지사항</a></li>
+          <li><a href="#!">행사안내</a></li>
+          <li><a href="#!">필름 아카이브</a></li>
+        
+        </ul>
+      </li><!--m4-->
+
+      <li class="m5"><a href="#!">전시ㆍ행사</a>
+        <ul>
+          <li><a href="#!">전시ㆍ행사가이드</a></li>
+          <li><a href="#!">전시ㆍ행사일정</a></li>
+          <li><a href="#!">지난전시ㆍ행사</a></li>
+          <li><a href="#!">행사장배치도</a></li>
+        </ul>
+      </li><!--m5-->
+
+      <li class="m6"><a href="#!">이벤트 제휴</a>
+        <ul>
+          <li><a href="#!">제휴</a></li>
+          <li><a href="#!">회원제안내</a></li>
+          <li><a href="#!">메세나 기업 모집</a></li>
+          <li><a href="#!">광고신청</a></li>
+          <li><a href="#!">촬영신청</a></li>
+
+        </ul>
+      </li><!--m6-->
+
+      <li class="m7"><a href="#!">영화의전당</a>
+        <ul>
+          <li><a href="#!">영화의 전당 소개</a></li>
+          <li><a href="./sub/sub.html">연혁</a></li>
+          <li><a href="#!">대관 및 배치도</a></li>
+          <li><a href="#!">시설소개</a></li>
+          <li><a href="#!">오시는 길</a></li>
+          <li><a href="#!">주차안내</a></li>
+        </ul>
+      </li><!--m7-->
+    </ul><!--lnb-->
+  </nav>
+
+  <div class="path_box">
+    <div class="path">
+      <div class="home"><a href="#">
+        <i class="fa-solid fa-house"></i>
+      </a></div>
+      <div class="dure">
+        <i class="fa-solid fa-chevron-right"></i>  
+        영화의 전당
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div class="index">
+        <select>
+          <option>영화의 전당 소개</option>
+          <option selected>연혁</option>
+          <option>대관 및 배치도</option>
+          <option>시설소개</option>
+          <option>오시는 길</option>
+          <option>주차안내</option>
+        </select>
+      </div>
+    </div>
+  </div><!--path_box-->
+
+  <section class="history_section">
+    <div class="history_intro">
+      <div class="intro_fix">
+        <p class="intro_title">
+          DURERAUM
+        </p>
+        <P class="intro_sub">
+          영화의 전당
+        </P>
+        <p class="intro_txt">
+          - propagating Korean Film and its amusement -
+        </p>
+      </div>
+
+      <div class="history_box">
+        <p class="hs_title">
+          DURERAUM - The Busan Cinema Center
+        </p>
+        <p class="hs_sub">
+          Yeong-Hwa-Ui-Jeon-Dang
+        </p>
+        <p class="hs_txt">
+          영화의 전당(Busan Cinema Center)은 부산광역시 해운대구 센텀시티에 위치한 '유네스코 영화창의도시'부산의 랜드마크이다. 국내에서 영화를 사랑하는 영화인들의 열망과 아시아의 대표적인 영화ㆍ영상 도시를 지향하는 부산시의 강력한 의지가 뒷받침되어 2011년 9월 29일에 탄생하였다.
+          2005년 국제 지명 현상 설제 공모에서 오스트리아 '쿱힘멜브라우'의 디자인이 선정되었다. 쿱힘멜브라우가 기본 설계, 희림종합건축사 사무소가 실시 설계, 한진중공업이 시공하였으며, 2008년 10월 기공, 2011년 9월 29에 개관식을 가졌다. 애칭으로 순우리말인 두레(함께 모여)와 라움(즐거움)을 조합한 '함께 모여 영화를 즐기는 자리'라는 의미인 '두레라움(Dureraum)'이라고도 불린다.
+        </p>
+      </div><!--history_box-->
+    </div>
+
+    <div class="m_year_tab">
+      <div class="recent">
+        <a href="#hs_top">최근 ~ 2019</a>
+      </div>
+      <div class="year18">
+        <a href="#hs_mid">2018 ~ 2015</a>
+      </div>
+      <div class="year14">
+        <a href="#hs_bot">2014 ~ 2008</a>
+      </div>
+    </div>
+
+    <p class="hsofDure" id="hs_top">
+      THE HISTORY OF DURERAUM
+    </p>
+    <div class="history_contents_box m_hs_contents">
+      <div class="w_year_tab">
+        <div class="btn_year_tab">
+          연도별 
+          <br/><br/>보기
+        </div>
+        <div class="w_year_sheet">
+          <div class="tab01">
+            <a href="#recent">최근 ~ 2019</a>
+          </div>
+          <div class="tab02">
+            <a href="#hs_18">2018 ~ 2015</a> 
+          </div>
+          <div class="tab03">
+            <a href="#hs_14">2014 ~ 2008</a> 
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_22" id="recent">
+        <div class="year_title">2022</div>
+        <div class="history_sheet  hs_22txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_01.svg" alt="1월 이미지">
+            </div>
+            <p class="txt">
+              2022.01 제4대 대표이사(김진해) 취임
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_02.svg" alt="2월 이미지">
+            </div>
+            <p class="txt">
+              2022.02 영화의 전당 향후 10년의 비전과 과제 세미나 시행
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_03.svg" alt="3월 이미지">
+            </div>
+            <p class="txt">
+              2022.03 영화의전당 비전선포식 시행
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_05.svg" alt="5월 이미지">
+            </div>
+            <p class="txt">
+              2022.05 메타버스가 영화산업에 미치는 영향 세미나 시행
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_21">
+        <div class="year_title">2021</div>
+        <div class="history_sheet hs_21txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_07.svg" alt="7월 이미지">
+            </div>
+            <p class="txt">
+              2021.07 월드시네마랜드마크 운영사무 위탁 계약 체결
+            </p>
+            <p class="txt02">
+              영화전문도서관 더바이브러리 개관
+            </p>
+          </div>
+
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2021.10 부산국제영화제 개최
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_11.svg" alt="11월 이미지">
+            </div>
+            <p class="txt">
+              2021.11 부산광역시-영화의전당 관리 운영 위수탁 계약 체결
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="12월 이미지">
+            </div>
+            <p class="txt">
+              2021.05~12 마을영화만들기 프로젝트 추진(영도구 대평동 깡깡이마을) 
+            </p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="history_content hs_20">
+        <div class="year_title">2020</div>
+        <div class="history_sheet hs_20txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_07.svg" alt="7월 이미지">
+            </div>
+            <p class="txt">
+              2020.07 안전경영시스템(ISO 45001)인증 획득
+            </p>
+          </div>
+
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_09.svg" alt="9월 이미지">
+            </div>
+            <p class="txt">
+              2020.09 2020 KOREA Unique Venue 선정
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2020.10 제 25회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="12월 이미지">
+            </div>
+            <p class="txt">
+              2020.12 전국 출연기관 최초 소비자중심경영(CCM) 재인증획득
+            </p>
+            <p class="txt02">
+              여성가족부 '가족친화인증'재인증 획득
+              <br /><br />
+            </p>
+            <p class="txt03">
+              '2020 대한민국청소년박람회 온라인으로 즐기는 체험활동 우수운영 단체'여성가족부 장관상 수상
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_19">
+        <div class="year_title">2019</div>
+        <div class="history_sheet hs_19txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_01.svg" alt="1월 이미지">
+            </div>
+            <p class="txt">
+              2019.01 부산학생꿈터(부산시 교육청) 인증 획득
+            </p>
+          </div>
+
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_05.svg" alt="5월 이미지">
+            </div>
+            <p class="txt">
+              2019.05 유네스코 영화창의도시 평가 최우수 등급 획득
+            </p>
+            <p class="txt02">
+              2018 KOREA Unique Venue 선정
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_07.svg" alt="7월 이미지">
+            </div>
+            <p class="txt">
+              2019.07 BIFF와 공동 메세나 사업 추진
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2019.10 전문예술법인 지정서 취득
+            </p>
+            <p class="txt02">
+              제24회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_05">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_11.svg" alt="11월 이미지">
+            </div>
+            <p class="txt">
+              2019.11 2019 KOREA Unique Venue 선정
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="empty_box01" id="hs_18"></div>
+      <div class="history_content hs_18" id="hs_mid">
+        <div class="year_title">2018</div>
+        <div class="history_sheet hs_18txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_03.svg" alt="3월 이미지">
+            </div>
+            <p class="txt">
+              2018.03 2017 KOREA Unique Venue 선정
+            </p>
+          </div>
+
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_04.svg" alt="4월 이미지">
+            </div>
+            <p class="txt">
+              2018.04 영화상영관 '실내공기 우수시설 재인증' 획득
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2018.10 제23회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_11.svg" alt="11월 이미지">
+            </div>
+            <p class="txt">
+              2018.11 국제필름아카이브연맹(FIAF) 준회원 가입
+            </p>
+          </div>
+          <div class="hs_month hs_05">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="12월 이미지">
+            </div>
+            <p class="txt">
+              2018.12 문화예술기관 최초 소비자중심경영(CCM) 인증 획득
+            </p>
+            <p class="txt02">
+              여성가족부 '가족친화인증' 유효기간 연장
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_17">
+        <div class="year_title">2017</div>
+        <div class="history_sheet hs_17txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_06.svg" alt="6월 이미지">
+            </div>
+            <p class="txt">
+              2017.06 교육기부 진로체험 인증기관 획득
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_07.svg" alt="7월 이미지">
+            </div>
+            <p class="txt">
+              2017.07 부산시 일자리경진대회 우수상 당선
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2017.10 제22회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_11.svg" alt="11월 이미지">
+            </div>
+            <p class="txt">
+              2017.11 국민건강보험공단 감사장 취득
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="history_content hs_16">
+        <div class="year_title">2016</div>
+        <div class="history_sheet hs_16txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_01.svg" alt="1월 이미지">
+            </div>
+            <p class="txt">
+              2016.01 (사)한국 MICE협회 '기업회의 명소 인증서' 획득
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_03.svg" alt="3월 이미지">
+            </div>
+            <p class="txt">
+              2016.03 '인디플러스 영화의전당'(독립영화전용관) 개관
+            </p>
+            <p class="txt02">
+              영화상영관(인디플러스 영화의전당) 등록
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_04.svg" alt="4월 이미지">
+            </div>
+            <p class="txt">
+              2016.04 영화관 최초 '실내공기 우수시설 인증' 획득
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_09.svg" alt="9월 이미지">
+            </div>
+            <p class="txt">
+              2016.09 CJ E&M '2016 올리브푸드페스티벌' 유치
+            </p>
+          </div>
+          <div class="hs_month hs_05">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="9월 이미지">
+            </div>
+            <p class="txt">
+              2016.10 제21회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_06">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="9월 이미지">
+            </div>
+            <p class="txt">
+              2016.12 디지털 사이니지 설치
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_15">
+        <div class="year_title">2015</div>
+        <div class="history_sheet hs_15txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="9월 이미지">
+            </div>
+            <p class="txt">
+              2015.10 기념품샵'시퀀스'오픈
+            </p>
+            <p class="txt02">
+              제20회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="12월 이미지">
+            </div>
+            <p class="txt">
+              2015.12 여성가족부 '가족친화인증' 신규 획득
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="empty_box02" id="hs_14"></div>
+      <div class="history_content hs_14" id="hs_bot">
+        <div class="year_title">2014</div>
+        <div class="history_sheet hs_14txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_02.svg" alt="2월 이미지">
+            </div>
+            <p class="txt">
+              2014.02 전국 공공기관 중 예술영화(메콩호텔) 첫 배급
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2014.10 더블콘 임대계약 체결 및 한식 레스토랑 '식당120'오픈
+            </p>
+            <p class="txt02">
+              제19회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="12월 이미지">
+            </div>
+            <p class="txt">
+              2014.12 한-아세안 특별정상회의 문화행사 유치
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_13">
+        <div class="year_title">2013</div>
+        <div class="history_sheet hs_13txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_03.svg" alt="3월 이미지">
+            </div>
+            <p class="txt">
+              2013.03 영화의 존 설치
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2013.10 제18회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_11.svg" alt="11월 이미지">
+            </div>
+            <p class="txt">
+              2013.11 부산 최초 시네뮤지컬 '친구'공연 상영
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_12">
+        <div class="year_title">2012</div>
+        <div class="history_sheet hs_12txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_03.svg" alt="3월 이미지">
+            </div>
+            <p class="txt">
+              2012.03 (재)영화의전당 빅루프 기네스북 등재식
+            </p>
+            <p class="txt02">
+              카페(뤼미에르, 라온)오픈
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2012.10 '한국건축문화대상' 우수상 수상
+            </p>
+            <p class="txt02">
+              '올해의 부산다운 건축상' 대상 수상
+            </p>
+            <p class="txt03">
+              제17회 부산국제영화제 개최 지원
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_11">
+        <div class="year_title">2011</div>
+        <div class="history_sheet hs_11txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_06.svg" alt="6월 이미지">
+            </div>
+            <p class="txt">
+              2011.06 (재)영화의전당 설립 및 운영지원 조례 제정
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_09.svg" alt="09월 이미지">
+            </div>
+            <p class="txt">
+              2011.09 (재)영화의전당 개관식
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2011.10 시네마테크부산 통합
+            </p>  
+            <p class="txt02">
+              한국영상자료원 부산분원 이관
+            </p>  
+            <p class="txt03">
+              제16회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_11.svg" alt="11월 이미지">
+            </div>
+            <p class="txt">
+              2011.11 공연장(하늘연극장) 등록
+            </p>
+            <p class="txt02"> 
+              영화상영관(중극장, 소극장, 시네마테크) 등록
+            </p>
+            <p class="txt03">
+              부산국제영화제 조직위원회 입주
+            </p>
+            <p class="txt04">
+              영화의전당 개관 영화제 개최(국내 최대 규모 기획영화제, 222편 550회차 상영)
+            </p>
+          </div>
+          <div class="hs_month hs_05">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="12월 이미지">
+            </div>
+            <p class="txt">
+              2011.12 '부산 10대 히트상품' 1위 선정
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_08">
+        <div class="year_title">2008</div>
+        <div class="history_sheet hs_08txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2008.10 부산영상센터 건립 기공식
+            </p>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="history_contents_box w_hs_contents">
+      <div class="w_year_tab">
+        <div class="btn_year_tab">
+          연도별 
+          <br/><br/>보기
+        </div>
+        <div class="w_year_sheet">
+          <div class="tab01">
+            <a href="#recent">최근 ~ 2019</a>
+          </div>
+          <div class="tab02">
+            <a href="#hs_18">2018 ~ 2015</a> 
+          </div>
+          <div class="tab03">
+            <a href="#hs_14">2014 ~ 2008</a> 
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_22" id="recent">
+        <div class="year_title">2022</div>
+        <div class="history_sheet  hs_22txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_01.svg" alt="1월 이미지">
+            </div>
+            <p class="txt">
+              2022.01 제4대 대표이사(김진해) 취임
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_02.svg" alt="2월 이미지">
+            </div>
+            <p class="txt">
+              2022.02 영화의 전당 향후 10년의 비전과 과제 세미나 시행
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_03.svg" alt="3월 이미지">
+            </div>
+            <p class="txt">
+              2022.03 영화의전당 비전선포식 시행
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_05.svg" alt="5월 이미지">
+            </div>
+            <p class="txt">
+              2022.05 메타버스가 영화산업에 미치는 영향 세미나 시행
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_21">
+        <div class="year_title">2021</div>
+        <div class="history_sheet hs_21txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_07.svg" alt="7월 이미지">
+            </div>
+            <p class="txt">
+              2021.07 월드시네마랜드마크 운영사무 위탁 계약 체결
+            </p>
+            <p class="txt02">
+              영화전문도서관 더바이브러리 개관
+            </p>
+          </div>
+
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2021.10 부산국제영화제 개최
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_11.svg" alt="11월 이미지">
+            </div>
+            <p class="txt">
+              2021.11 부산광역시-영화의전당 관리 운영 위수탁 계약 체결
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="12월 이미지">
+            </div>
+            <p class="txt">
+              2021.05~12 마을영화만들기 프로젝트 추진(영도구 대평동 깡깡이마을) 
+            </p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="history_content hs_20">
+        <div class="year_title">2020</div>
+        <div class="history_sheet hs_20txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_07.svg" alt="7월 이미지">
+            </div>
+            <p class="txt">
+              2020.07 안전경영시스템(ISO 45001)인증 획득
+            </p>
+          </div>
+
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_09.svg" alt="9월 이미지">
+            </div>
+            <p class="txt">
+              2020.09 2020 KOREA Unique Venue 선정
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2020.10 제 25회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="12월 이미지">
+            </div>
+            <p class="txt">
+              2020.12 전국 출연기관 최초 소비자중심경영(CCM) 재인증획득
+            </p>
+            <p class="txt02">
+              여성가족부 '가족친화인증'재인증 획득
+              <br /><br />
+            </p>
+            <p class="txt03">
+              '2020 대한민국청소년박람회 온라인으로 즐기는 체험활동 우수운영 단체'여성가족부 장관상 수상
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_19">
+        <div class="year_title">2019</div>
+        <div class="history_sheet hs_19txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_01.svg" alt="1월 이미지">
+            </div>
+            <p class="txt">
+              2019.01 부산학생꿈터(부산시 교육청) 인증 획득
+            </p>
+          </div>
+
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_05.svg" alt="5월 이미지">
+            </div>
+            <p class="txt">
+              2019.05 유네스코 영화창의도시 평가 최우수 등급 획득
+            </p>
+            <p class="txt02">
+              2018 KOREA Unique Venue 선정
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_07.svg" alt="7월 이미지">
+            </div>
+            <p class="txt">
+              2019.07 BIFF와 공동 메세나 사업 추진
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2019.10 전문예술법인 지정서 취득
+            </p>
+            <p class="txt02">
+              제24회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_05">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_11.svg" alt="11월 이미지">
+            </div>
+            <p class="txt">
+              2019.11 2019 KOREA Unique Venue 선정
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="empty_box01" id="hs_18"></div>
+      <div class="history_content hs_18" id="hs_mid">
+        <div class="year_title">2018</div>
+        <div class="history_sheet hs_18txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_03.svg" alt="3월 이미지">
+            </div>
+            <p class="txt">
+              2018.03 2017 KOREA Unique Venue 선정
+            </p>
+          </div>
+
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_04.svg" alt="4월 이미지">
+            </div>
+            <p class="txt">
+              2018.04 영화상영관 '실내공기 우수시설 재인증' 획득
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2018.10 제23회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_11.svg" alt="11월 이미지">
+            </div>
+            <p class="txt">
+              2018.11 국제필름아카이브연맹(FIAF) 준회원 가입
+            </p>
+          </div>
+          <div class="hs_month hs_05">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="12월 이미지">
+            </div>
+            <p class="txt">
+              2018.12 문화예술기관 최초 소비자중심경영(CCM) 인증 획득
+            </p>
+            <p class="txt02">
+              여성가족부 '가족친화인증' 유효기간 연장
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_17">
+        <div class="year_title">2017</div>
+        <div class="history_sheet hs_17txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_06.svg" alt="6월 이미지">
+            </div>
+            <p class="txt">
+              2017.06 교육기부 진로체험 인증기관 획득
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_07.svg" alt="7월 이미지">
+            </div>
+            <p class="txt">
+              2017.07 부산시 일자리경진대회 우수상 당선
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2017.10 제22회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_11.svg" alt="11월 이미지">
+            </div>
+            <p class="txt">
+              2017.11 국민건강보험공단 감사장 취득
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="history_content hs_16">
+        <div class="year_title">2016</div>
+        <div class="history_sheet hs_16txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_01.svg" alt="1월 이미지">
+            </div>
+            <p class="txt">
+              2016.01 (사)한국 MICE협회 '기업회의 명소 인증서' 획득
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_03.svg" alt="3월 이미지">
+            </div>
+            <p class="txt">
+              2016.03 '인디플러스 영화의전당'(독립영화전용관) 개관
+            </p>
+            <p class="txt02">
+              영화상영관(인디플러스 영화의전당) 등록
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_04.svg" alt="4월 이미지">
+            </div>
+            <p class="txt">
+              2016.04 영화관 최초 '실내공기 우수시설 인증' 획득
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_09.svg" alt="9월 이미지">
+            </div>
+            <p class="txt">
+              2016.09 CJ E&M '2016 올리브푸드페스티벌' 유치
+            </p>
+          </div>
+          <div class="hs_month hs_05">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="9월 이미지">
+            </div>
+            <p class="txt">
+              2016.10 제21회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_06">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="9월 이미지">
+            </div>
+            <p class="txt">
+              2016.12 디지털 사이니지 설치
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_15">
+        <div class="year_title">2015</div>
+        <div class="history_sheet hs_15txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="9월 이미지">
+            </div>
+            <p class="txt">
+              2015.10 기념품샵'시퀀스'오픈
+            </p>
+            <p class="txt02">
+              제20회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="12월 이미지">
+            </div>
+            <p class="txt">
+              2015.12 여성가족부 '가족친화인증' 신규 획득
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="empty_box02" id="hs_14"></div>
+      <div class="history_content hs_14" id="hs_bot">
+        <div class="year_title">2014</div>
+        <div class="history_sheet hs_14txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_02.svg" alt="2월 이미지">
+            </div>
+            <p class="txt">
+              2014.02 전국 공공기관 중 예술영화(메콩호텔) 첫 배급
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2014.10 더블콘 임대계약 체결 및 한식 레스토랑 '식당120'오픈
+            </p>
+            <p class="txt02">
+              제19회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="12월 이미지">
+            </div>
+            <p class="txt">
+              2014.12 한-아세안 특별정상회의 문화행사 유치
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_13">
+        <div class="year_title">2013</div>
+        <div class="history_sheet hs_13txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_03.svg" alt="3월 이미지">
+            </div>
+            <p class="txt">
+              2013.03 영화의 존 설치
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2013.10 제18회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_11.svg" alt="11월 이미지">
+            </div>
+            <p class="txt">
+              2013.11 부산 최초 시네뮤지컬 '친구'공연 상영
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_12">
+        <div class="year_title">2012</div>
+        <div class="history_sheet hs_12txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_03.svg" alt="3월 이미지">
+            </div>
+            <p class="txt">
+              2012.03 (재)영화의전당 빅루프 기네스북 등재식
+            </p>
+            <p class="txt02">
+              카페(뤼미에르, 라온)오픈
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2012.10 '한국건축문화대상' 우수상 수상
+            </p>
+            <p class="txt02">
+              '올해의 부산다운 건축상' 대상 수상
+            </p>
+            <p class="txt03">
+              제17회 부산국제영화제 개최 지원
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_11">
+        <div class="year_title">2011</div>
+        <div class="history_sheet hs_11txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_06.svg" alt="6월 이미지">
+            </div>
+            <p class="txt">
+              2011.06 (재)영화의전당 설립 및 운영지원 조례 제정
+            </p>
+          </div>
+          <div class="hs_month hs_02">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_09.svg" alt="09월 이미지">
+            </div>
+            <p class="txt">
+              2011.09 (재)영화의전당 개관식
+            </p>
+          </div>
+          <div class="hs_month hs_03">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2011.10 시네마테크부산 통합
+            </p>  
+            <p class="txt02">
+              한국영상자료원 부산분원 이관
+            </p>  
+            <p class="txt03">
+              제16회 부산국제영화제 개최 지원
+            </p>
+          </div>
+          <div class="hs_month hs_04">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_11.svg" alt="11월 이미지">
+            </div>
+            <p class="txt">
+              2011.11 공연장(하늘연극장) 등록
+            </p>
+            <p class="txt02"> 
+              영화상영관(중극장, 소극장, 시네마테크) 등록
+            </p>
+            <p class="txt03">
+              부산국제영화제 조직위원회 입주
+            </p>
+            <p class="txt04">
+              영화의전당 개관 영화제 개최(국내 최대 규모 기획영화제, 222편 550회차 상영)
+            </p>
+          </div>
+          <div class="hs_month hs_05">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_12.svg" alt="12월 이미지">
+            </div>
+            <p class="txt">
+              2011.12 '부산 10대 히트상품' 1위 선정
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history_content hs_08">
+        <div class="year_title">2008</div>
+        <div class="history_sheet hs_08txt">
+          <div class="hs_month hs_01">
+            <div class="slate">
+              <img src="./서브페이지_코딩용사진_1차수정/슬레이트넘버/slate_number_fontsize_8_28x28/slate_10.svg" alt="10월 이미지">
+            </div>
+            <p class="txt">
+              2008.10 부산영상센터 건립 기공식
+            </p>
+          </div>
+        </div>
+      </div>  
+
+      <div class="mid_bar"></div>
+      <div class="w_img_box box01">
+        <img src="./images/history01_original.jpg" alt="이미지1">
+      </div>
+      <div class="w_img_box box02">
+        <img src="./images/history02_original.jpg" alt="이미지2">
+      </div>
+      <div class="w_img_box box03">
+        <img src="./images/history03_original.jpg" alt="이미지3">
+      </div>
+    </div>
+  </section><!--history_section-->
+
+  <footer class="footer" id="footer">
+    <div class="footer_top">
+      <div class="news_letter">
+        <span style="font-weight: bold;" class="nl_title">영화의 전당 뉴스레터</span>
+        <p class="btn_subscribe">구독하기</p>
+      </div>
+      <input type="checkbox" id="chk_info">
+      <div class="more_info">
+        <div class="label_box">
+          <label for="chk_info" class="lab_infoOpen">
+            <p class="txt">추가정보</p>
+            <p class="arr"><i class="fa-solid fa-chevron-down"></i></p>
+          </label>
+          <label for="chk_info" class="lab_infoClose">
+            <p class="txt">추가정보</p>
+            <p class="arr"><i class="fa-solid fa-chevron-up"></i></p>
+          </label>
+        </div>
+        <div class="moreInfo_sheet">
+          <p><a href="#"> 개인정보처리방침</a></p>
+          <p><a href="#">정보공개</a></p>
+          <p><a href="#">장애인 이용안내</a></p>
+          <p><a href="#">고객참여</a></p>
+          <p><a href="#">취소/환불</a> 가이드</p>
+          <p><a href="#">자유게시판</a></p>
+          <p><a href="#">사이트맵</a></p>
+          <p><a href="#">이용약관</a></p>
+        </div>
+      </div><!--more_info-->
+      <div class="ci_box">
+        <div class="rel_company">
+          <p>유관기관</p>
+          <div class="btn_rel_more">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="all_rel_bg">
+            <div class="btn_rel_close">
+              <div class="icon">
+                <i class="fa-solid fa-x"></i>
+              </div>
+            </div>
+            <div class="all_rel_box">
+              <div class="all_rel_sheet">
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company01.jpg" alt="유관기관1">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company02.png" alt="유관기관2">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company03.jpg" alt="유관기관3">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company04.png" alt="유관기관4">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company05.jpg" alt="유관기관5">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company06.png" alt="유관기관6">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company07.jpg" alt="유관기관7">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company08.png" alt="유관기관8">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company09.jpg" alt="유관기관9">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company10.jpg" alt="유관기관10">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company11.jpg" alt="유관기관11">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company12.jpg" alt="유관기관12">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company13.jpg" alt="유관기관13">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company14.jpg" alt="유관기관14">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company15.jpg" alt="유관기관15">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company16.jpg" alt="유관기관16">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company17.jpg" alt="유관기관17">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company18.jpg" alt="유관기관18">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company19.jpg" alt="유관기관19">
+                </div>
+                <div class="rel_com">
+                  <img src="./images/rel_company/rel_company20.jpg" alt="유관기관20">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <ul class="rel_frame">
+            <li>
+              <ul class="rel_slide">
+                <li><img src="./images/rel_company/rel_company01.jpg" alt="유관기관CI01"></li>
+                <li><img src="./images/rel_company/rel_company02.png" alt="유관기관CI02"></li>
+                <li><img src="./images/rel_company/rel_company03.jpg" alt="유관기관CI03"></li>
+                <li><img src="./images/rel_company/rel_company04.png" alt="유관기관CI04"></li>
+                <li><img src="./images/rel_company/rel_company05.jpg" alt="유관기관CI05"></li>
+                <li><img src="./images/rel_company/rel_company06.png" alt="유관기관CI06"></li>
+                <li><img src="./images/rel_company/rel_company07.jpg" alt="유관기관CI07"></li>
+                <li><img src="./images/rel_company/rel_company08.png" alt="유관기관CI08"></li>
+                <li><img src="./images/rel_company/rel_company09.jpg" alt="유관기관CI09"></li>
+                <li><img src="./images/rel_company/rel_company10.jpg" alt="유관기관CI10"></li>
+                <li><img src="./images/rel_company/rel_company11.jpg" alt="유관기관CI11"></li>
+                <li><img src="./images/rel_company/rel_company12.jpg" alt="유관기관CI12"></li>
+                <li><img src="./images/rel_company/rel_company13.jpg" alt="유관기관CI13"></li>
+                <li><img src="./images/rel_company/rel_company14.jpg" alt="유관기관CI14"></li>
+                <li><img src="./images/rel_company/rel_company15.jpg" alt="유관기관CI15"></li>
+                <li><img src="./images/rel_company/rel_company16.jpg" alt="유관기관CI16"></li>
+                <li><img src="./images/rel_company/rel_company17.jpg" alt="유관기관CI17"></li>
+                <li><img src="./images/rel_company/rel_company18.jpg" alt="유관기관CI18"></li>
+                <li><img src="./images/rel_company/rel_company19.jpg" alt="유관기관CI19"></li>
+                <li><img src="./images/rel_company/rel_company20.jpg" alt="유관기관CI20"></li>
+                <li class="w_rel01"><img src="./images/rel_company/rel_company01.jpg" alt="유관기관CI01"></li>
+                <li class="w_rel02"><img src="./images/rel_company/rel_company02.png" alt="유관기관CI02"></li>
+                <li class="w_rel03"><img src="./images/rel_company/rel_company03.jpg" alt="유관기관CI03"></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--rel_company-->
+        <div class="mecenat">
+          <div class="all_mec_bg">
+            <div class="btn_mec_close">
+              <div class="icon">
+                <i class="fa-solid fa-x"></i>
+              </div>
+            </div>
+            <div class="all_mec_box">
+              <div class="all_mec_sheet">
+                <div class="mec_com">
+                  <img src="./images/mecenat/mecenat_01.jpg" alt="메세나 기업1">
+                </div>
+                <div class="mec_com">
+                  <img src="./images/mecenat/mecenat_02.jpg" alt="메세나 기업2">
+                </div>
+                <div class="mec_com">
+                  <img src="./images/mecenat/mecenat_03.jpg" alt="메세나 기업3">
+                </div>
+                <div class="mec_com">
+                  <img src="./images/mecenat/mecenat_04.jpg" alt="메세나 기업4">
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>메세나 기업</p>
+          <div class="btn_mecenat_more">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <ul class="mecenat_frame">
+            <li>
+              <ul class="mecenat_slide">
+                <li><img src="./images/mecenat/mecenat_01.jpg" alt="메세나기업CI01"></li>
+                <li><img src="./images/mecenat/mecenat_02.jpg" alt="메세나기업CI02"></li>
+                <li><img src="./images/mecenat/mecenat_03.jpg" alt="메세나기업CI03"></li>
+                <li><img src="./images/mecenat/mecenat_04.jpg" alt="메세나기업CI04"></li>
+                <li class="w_mec01"><img src="./images/mecenat/mecenat_01.jpg" alt="메세나기업CI01"></li>
+                <li class="w_mec02"><img src="./images/mecenat/mecenat_02.jpg" alt="메세나기업CI02"></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--mecenat-->
+      </div><!--ci_box-->
+    </div><!--footer_top-->
+    <div class="footer_info">
+      <p>(우)48058 부산광역시 해운대구
+        <span class="m_span"><br /></span>수영강변대로 120
+        <span class="t_span"><br /></span> 영화의전당(우동 1467번지)
+        <span class="m_span"><br /></span>
+        <span class="t_span"><br /></span>
+        <span class="p_span"><br /></span> TEL 051-780-6000/6080 Fax. 051-780-6019
+        <span class="m_span"><br /></span>
+        <span class="t_span"><br /></span>
+        <span class="p_span"><br /></span> (재)영화의전당 대표자 김진해 사업자번호 : 617-82-11427
+        <span class="m_span"><br /></span>
+        <span class="t_span"><br /></span> 통신판매업신고 : 부산해운 제0510호 사업자정보확인
+        <span class="m_span"><br /></span>
+        <span class="t_span"><br /></span>
+        <span class="p_span"><br /></span> COPYRIGHT(C) BUSAN CINEMA CENTER. ALL RIGHTS RESERVED
+      </p>
+      <div class="footer_logo_box">
+        <div class="ft_logo01">
+          <a href="./index.html">
+            <img src="./images/logo_footer.png" alt="하단 로고이미지1">
+          </a>
+        </div>
+        <div class="ft_logo02">
+          <img src="./images/ft_logos .png" alt="하단 로고이미지2">
+        </div>
+      </div>
+    </div><!--footer_info-->
+  </footer>
+  <aside class="aside">
+    <div class="wish_list_box">
+      <span class="txt">위시<br />리스트</span>
+    </div>
+    
+    <div class="quick_box">
+      <span class="txt">빠른<br />예매</span>
+    </div>
+    
+    <div class="top_box">
+      <a href="#header">
+        <span class="w_txt"><i class="fa-solid fa-chevron-up"></i><br />TOP</span>
+        <span class="txt"><i class="fa-solid fa-chevron-up"></i></span>
+      </a>
+    </div>
+
+    <div class="down_box">
+      <a href="#footer">
+        <span class="txt"><i class="fa-solid fa-chevron-down"></i></span>
+      </a>
+    </div>
+
+  </aside>
+  <div class="wish_bg">
+    <div class="wish_sheet">
+      <div class="btn_close_wish">
+        <div class="icon">
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
+      <div class="w_contents">
+        <p class="w_title">위시리스트</p>
+        <div class="w_list_box">
+
+        </div>
+      </div><!--w_contents-->
+    </div><!--wish_sheet-->
+  </div><!--wish_bg-->
+
+  <div class="quick_bg">
+    <div class="quick_sheet">
+      <div class="btn_close_quick">
+        <div class="icon">
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
+      <div class="q_contents">
+        <div class="q_title">빠른예매</div>
+        <div class="q_inner_con">
+          <ul class="con_title">
+            <li class="q_movie btn_ch">영화</li>
+            <li class="q_concert">공연</li>
+            <li class="q_exhib">전시</li>
+          </ul>
+          <div class="q_calendar">
+            <p>2022년 11월</p>
+            <ul class="q_date">
+              <li>일</li>
+              <li>월</li>
+              <li>화</li>
+              <li>수</li>
+              <li>목</li>
+              <li>금</li>
+              <li>토</li>
+              <li><a href="#!">&nbsp;</a></li>
+              <li><a href="#!">&nbsp;</a></li>
+              <li class="ch_date"><a href="#!">1</a></li>
+              <li><a href="#!">2</a></li>
+              <li><a href="#!">3</a></li>
+              <li><a href="#!">4</a></li>
+              <li><a href="#!">5</a></li>
+              <li><a href="#!">6</a></li>
+              <li><a href="#!">7</a></li>
+              <li><a href="#!">8</a></li>
+              <li><a href="#!">9</a></li>
+              <li><a href="#!">10</a></li>
+              <li><a href="#!">11</a></li>
+              <li><a href="#!">12</a></li>
+              <li><a href="#!">13</a></li>
+              <li><a href="#!">14</a></li>
+              <li><a href="#!">15</a></li>
+              <li><a href="#!">16</a></li>
+              <li><a href="#!">17</a></li>
+              <li><a href="#!">18</a></li>
+              <li><a href="#!">19</a></li>
+              <li><a href="#!">20</a></li>
+              <li><a href="#!">21</a></li>
+              <li><a href="#!">22</a></li>
+              <li><a href="#!">23</a></li>
+              <li><a href="#!">24</a></li>
+              <li><a href="#!">25</a></li>
+              <li><a href="#!">26</a></li>
+              <li><a href="#!">27</a></li>
+              <li><a href="#!">28</a></li>
+              <li><a href="#!">29</a></li>
+              <li><a href="#!">30</a></li>
+            </ul>
+          </div><!--calendar-->
+          <div class="list_box">
+            <div class="q_mov_list show_list">
+              <ul>
+                <li><a href="#!">
+                  <p class="time">09:30</p>
+                  <p class="age"><img src="./images/15.svg" alt="15세 관람"></p>
+                  <p class="mov_title">
+                    시대혁명(테크)
+                  </p>
+                </a></li>
+                <li><a href="#!">
+                  <p class="time">09:50</p>
+                  <p class="age"><img src="./images/15.svg" alt="15세 관람"></p>
+                  <p class="mov_title">
+                    낮과 달(소극장)
+                  </p>
+                </a></li>
+                <li><a href="#!">
+                  <p class="time">12:00</p>
+                  <p class="age"><img src="./images/15.svg" alt="15세 관람"></p>
+                  <p class="mov_title">
+                    (리플레이)젊은남자
+                  </p>
+                </a></li>
+                <li><a href="#!">
+                  <p class="time">12:30</p>
+                  <p class="age"><img src="./images/15.svg" alt="15세 관람"></p>
+                  <p class="mov_title">
+                    디셉션(테크)
+                  </p>
+                </a></li>
+                <li><a href="#!">
+                  <p class="time">14:20</p>
+                  <p class="age"><img src="./images/15.svg" alt="15세 관람"></p>
+                  <p class="mov_title">
+                    나를 죽여줘(소극장)
+                  </p>
+                </a></li>
+                <li><a href="#!">
+                  <p class="time">14:40</p>
+                  <p class="age"><img src="./images/15.svg" alt="15세 관람"></p>
+                  <p class="mov_title">
+                    아나이스 인 러브(테크)
+                  </p>
+                </a></li>
+                <li><a href="#!">
+                  <p class="time">16:40</p>
+                  <p class="age"><img src="./images/15.svg" alt="15세 관람"></p>
+                  <p class="mov_title">
+                    (리플레이)젊은남자
+                  </p>
+                </a></li>
+                <li><a href="#!">
+                  <p class="time">16:40</p>
+                  <p class="age"><img src="./images/15.svg" alt="15세 관람"></p>
+                  <p class="mov_title">
+                    디셉션(테크)
+                  </p>
+                </a></li>
+                <li><a href="#!">
+                  <p class="time">18:50</p>
+                  <p class="age"><img src="./images/15.svg" alt="15세 관람"></p>
+                  <p class="mov_title">
+                    아나이스 인 러브(테크)
+                  </p>
+                </a></li>
+                <li><a href="#!">
+                  <p class="time">19:00</p>
+                  <p class="age"><img src="./images/12.svg" alt="12세 관람"></p>
+                  <p class="mov_title">
+                    수프와 이데올로기(소극장)
+                  </p>
+                </a></li>
+                <li><a href="#!">
+                  <p class="time">20:50</p>
+                  <p class="age"><img src="./images/15.svg" alt="15세 관람"></p>
+                  <p class="mov_title">
+                    디셉션(테크)
+                  </p>
+                </a></li>
+              </ul>
+            </div>
+            <div class="q_con_list">
+              <ul>
+                <li><a href="#!">
+                  <p class="time">19:00</p>
+                  
+                  <p class="mov_title">
+                    김민교의 Ballet Image
+                  </p>
+                </a></li>
+              </ul>
+            </div>
+            <div class="q_exhib_list">
+              <ul>
+                <li><a href="#!">
+                  <p class="time">11:00~21:00</p>
+                  <p class="age"><img src="./images/15.svg" alt="15세 관람"></p>
+                  <p class="mov_title">
+                    MOI 뮤지엄오브일루전 착시미술관
+                  </p>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!--q_contents-->
+    </div><!--quick_sheet-->
+  </div><!--quick_bg-->
+</body>
+</html>
