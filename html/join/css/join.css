@@ -1,0 +1,63 @@
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+
+@media all and (min-width: 321px) {
+.container {width: 95%; margin: 0 auto;}
+.es_info label {
+  display: block;
+  width: 140px;
+  float: left;
+  text-align: center;
+}
+.es_info li {
+  height: 30px;
+}
+.es_info .id_alarm, 
+.es_info .pw_alarm, 
+.es_info .pw_chk_alarm {
+  display: block;
+  height: 10px;
+  margin-left: 140px;
+  font-size: 11px;
+  color: red;
+}
+.ad_info label {
+  display: block;
+  width: 140px;
+  float: left;
+  text-align: center;
+}
+.ad_info li {
+  height: 30px;
+}
+
+.terms_info li {
+  margin-bottom: 10px;
+}
+.terms_info .terms_txt {
+  width: 90%; height: 50px;
+  margin: 0 auto;
+  overflow: auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.btn_box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+}
+
+@media all and (min-width: 601px) {
+  
+}
+@media all and (min-width: 769px) {
+
+}
+@media all and (min-width: 1025px) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
